@@ -33,12 +33,20 @@ a {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 4vh 8vw;
+}
+
 .tile {
   background: rgba(95, 142, 182, 0.8);
   /* color: white; */
   -webkit-font-smoothing: antialiased;
   padding: 1em;
-  margin: 4vh 4vw;
+  margin: 4vh 8vw;
   box-shadow: 0px 4px 0px rgb(95, 142, 182);
   font-size: 140%;
 }
@@ -48,10 +56,14 @@ a {
   background: rgb(220, 220, 220);
   color: black;
   box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
-  width: 42vw;
+  width: 37vw;
   float: left;
   display: inline-block;
   font-size: 100%;
+}
+
+.tile.secondary.last {
+  margin-left: 0vw;
 }
 
 .tile p {
@@ -77,11 +89,51 @@ a {
   border-bottom: 1px solid white;
 }
 
+time {
+  background: rgb(95, 142, 182);
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  border-radius: 3em;
+  font-size: 80%;
+  display: block;
+  left: -6vw;
+  top: 1.5em;
+  box-shadow: 0 3px 0 0 rgba(72, 110, 142, 0.8);
+}
+
+time span {
+  text-align: center;
+  margin-top: 1.85em;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+}
+
+.large-tile {
+  background: rgb(220, 220, 220);
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+  margin: 4vh 8vw;
+  font-size: 120%;
+}
+
+.large-tile-inner {
+  padding: 1.5em 3em 1.5em;
+  position: relative;
+}
+
+.large-tile-inner p:last-child {
+  margin-bottom: 0;
+}
+
+.large-tile img {
+  display: block;
+}
+
 .fullscreen {
   top: 0;
   height: 100vh;
   padding: 1em;
-  overflow: hidden;
 }
 
 .fullscreen-image {
@@ -444,11 +496,6 @@ a.floating-button {
   padding: 0 0.7em;
   margin-top: 0.5em;
   margin-bottom: 0;
-}
-
-time {
-  font-weight: bold;
-  font-size: 120%;
 }
 
 .help {
